@@ -1,0 +1,45 @@
+# Virtual environments
+.venv/
+.venv-wsl/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Downloaded/generated data
+data/
+separated/
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models (auto-downloaded)
+*.ckpt
+*.pt
+*.pth
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
