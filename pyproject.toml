@@ -1,28 +1,18 @@
-[tool.poetry]
+[project]
 name = "ai-music-coach"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
 readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = ">=3.10,<3.11"
-matplotlib = ">=3.10.8,<4.0.0"
-librosa = ">=0.11.0,<0.12.0"
-pretty-midi = ">=0.2.11,<0.3.0"
-ipykernel = ">=7.1.0,<8.0.0"
-yt-dlp = "^2025.12.8"
-soundfile = "^0.13.1"
-demucs = "^4.0.1"
-torch = "^2.9.1"
-torchaudio = "^2.9.1"
-basic-pitch = "^0.4.0"
-midiutil = "^1.2.1"
-torchcodec = "^0.9.1"
-audio-separator = {extras = ["gpu"], version = "^0.41.0"}
-setuptools = "^80.9.0"
-cython = "^3.2.4"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "music21 (>=9.9.1,<10.0.0)",
+    "basic-pitch (>=0.4.0,<0.5.0)",
+    "setuptools (>=80.9.0,<81.0.0)",
+    "onnxruntime (>=1.23.2,<2.0.0)"
+]
 
 
 [build-system]

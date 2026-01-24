@@ -25,9 +25,13 @@ output/
 *.swp
 *.swo
 
+# Claude Code settings
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
+nul
 
 # Jupyter
 .ipynb_checkpoints/
